@@ -1,4 +1,3 @@
 # LinkRide
 - - -
-This currently isn't meant to be public, 
-so there isn't much to put into this file.
+A Carpooling website with Untis integration made for schools - as a school project
