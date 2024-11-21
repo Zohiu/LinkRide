@@ -1,0 +1,135 @@
+.bg-image {
+    background-image: url("https://source.unsplash.com/featured/1280×720/?carpool,car,share");
+
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    height: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    z-index: -100;
+
+    opacity: 0.25;
+}
+
+.rounded-container {
+    border-radius: 50px;
+    background-color: rgba(17, 25, 31, 0.5);
+    padding: 5%;
+}
+
+.with-header {
+    margin-top: 65px;
+}
+
+.nav-bar {
+    position: fixed;
+    background-color: rgb(17, 25, 31);
+    z-index: 100;
+}
+
+.footer-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 25vh;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(45deg, rgb(0, 225, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo {
+    border-radius: 10px;
+    margin: 0;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+}
+
+/* Loading Screen stuff */
+
+.loading {
+    position: fixed;
+    z-index: 1500;
+    min-height: 100%;
+    min-width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(17, 25, 31, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Toggle switch - https://uiverse.io/AmIt-DasIT/average-robin-42 */
+
+.checkbox {
+    width: 223px;
+    height: 60px;
+    background-color: rgb(17, 25, 31);
+    border-radius: 30px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+#checkbox_toggle {
+    display: none;
+}
+
+.checkbox .toggle {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    border-radius: 30px;
+    left: 5px;
+    cursor: pointer;
+    background: #14a3d2;
+    transition: 0.4s;
+}
+
+.checkbox .slide {
+    width: 230px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.checkbox .slide .text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.check:checked+.checkbox .slide .toggle {
+    transform: translateX(113px);
+    transition-duration: 0.2s;
+    background: #14a3d2;
+}
+
+.check:checked+.checkbox .slide {
+    background-color: white;
+    color: black;
+}

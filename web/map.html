@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #mapid { height: 600px; }
+    </style>
+
+    <meta name="darkreader-lock">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/leaflet.photon.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/pico.min.css">
+    
+</head>
+<body>
+    <div class="map leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="mapid" tabindex="0" style="border-radius: 15px;">
+        <div class="leaflet-control-container">
+            <div class="leaflet-top leaflet-left">
+            </div>
+            <div class="leaflet-top leaflet-right">
+            </div>
+            <div class="leaflet-bottom leaflet-left">
+                <div class="leaflet-control" id="control", style="max-width: 60%;">
+                    <span style="display: inline-block; width: 100%;">
+                        <label style="color: black; font-size: large; font-weight: bold;" for="rad1" id="t_rad1">Breite (50%)</label> 
+                        <input type="range" id="rad1" min="0" max="100" value="50">
+                    </span>
+                    <span style="display: inline-block; width: 100%;">
+                        <label style="color: black; font-size: large; font-weight: bold;" for="rad2" id="t_rad2">Länge (100%)</label> 
+                        <input type="range" id="rad2" min="0" max="150" value="100">
+                    </span>
+                    <span style="display: inline-block; width: 100%;">
+                        <label style="color: black; font-size: large; font-weight: bold;" for="pos" id="t_pos">Position (50%)</label> 
+                        <input type="range" id="pos" min="0" max="100" value="50">
+                    </span>
+
+                    <button id="map-submit" style="width: 100%;">Speichern</button>
+
+                </div>
+            </div>
+            <div class="leaflet-bottom leaflet-right">
+                <div class="leaflet-control-attribution leaflet-control">
+                    <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Data © <a href="https://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles © Komoot
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/leaflet.js"></script>
+    <script src="js/l.ellipse.js"></script>
+
+    <script src="js/map.js"></script>
+</body>
+</html>

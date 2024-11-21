@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="darkreader-lock">
+    <link href="css/pico.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/transition.min.css" rel="stylesheet" type="text/css" />
+    <title>LinkRide</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div id="lr-header"></div>
+  <div id="loading"></div>
+  <div id="check"></div>
+  <br>
+  <main class="container">
+    <section class="rounded-container with-header">
+      <hgroup style="text-align: center;">
+          <h1><span class="gradient-text">Registrieren</span></h1>
+          <h3>Carpooling</h3>
+      </hgroup>
+      <form style="margin-left: 35px; margin-right: 35px;" action="register.html" id="register">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" placeholder="E-Mail" required maxlength="25" />
+        <label for="password">Passwort <small>(6-20 Zeichen mit Zahl, Sonderzeichen, Groß- und Kleinbuchstaben)</small></label>
+        <input id="password" type="password" placeholder="Passwort" required maxlength="20" minlength="6" />
+        <label for="fname">Vorname</label>
+        <input id="fname" type="text" placeholder="Vorname" required maxlength="25" />
+        <label for="lname">Nachname</label>
+        <input id="lname" type="text" placeholder="Nachname" required maxlength="25" />
+        <label for="course">Untis Kurs</label>
+        <input id="course" type="text" placeholder="Untis Kurs" required maxlength="10" />
+        <label for="pcode">Postleitzahl</label>
+        <input id="pcode" type="text" placeholder="Postleitzahl" required maxlength="5" />
+        <label for="town">Ort</label>
+        <input id="town" type="text" placeholder="Ort" required maxlength="25" />
+        <label for="street">Straße und Hausnummer</label>
+        <input id="street" type="text" placeholder="Straße und Hausnummer" required maxlength="25" />
+
+        <input id="datenschutz" type="checkbox" required />
+        <label for="datenschutz" style="display: inline-block;">Ich akzeptiere die <a href="datenschutz.html">Datenschutzerklärung</a> sowie die Nutzung von Cookies</label>
+
+        <button id="submit" type="submit" style="margin-top: 15px;">Konto erstellen</button>
+        <div id="output" style="margin-bottom: 10px; margin-top: 10px; color: red;"></div>
+      </form>
+    </section>
+  </main>
+  <div id="lr-footer"></div>
+  <script async src="js/elements.js"></script>
+  <script async src="js/register.js"></script>
+</body>
+</html>
